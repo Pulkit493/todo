@@ -1,0 +1,11 @@
+{
+  "name": "todo",
+  "main": "server.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "mongoose": "^4.4.20"
+  }
+}
