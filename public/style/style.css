@@ -54,3 +54,7 @@ body{ background-color: black;}
 #close{ float: right; color: #af5b5e;}
 li:hover{color: aqua;}
 
+.footerText{
+	padding: 3%;
+    padding-left: 35%;
+}

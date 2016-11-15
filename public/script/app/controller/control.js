@@ -5,12 +5,11 @@
 var app=angular.module("myApp",[]);
 app.controller("myController",function($scope,$http){
     $scope.formData={};
-    $scope.createTodo = function() { debugger;
+    $scope.createTodo = function() {
         $http.post('/api/task', $scope.formData)
             .success(function(data) {
                 $scope.todos.push({task: $scope.formData.text});
                 $scope.formData = {};
-                console.log(data);
             })
             .error(function(data) {
                 console.log('Error: ' + data);
@@ -18,9 +17,8 @@ app.controller("myController",function($scope,$http){
     };
 
     $http.get('/api/task')
-        .success(function(data) {debugger;
+        .success(function(data) {
             $scope.todos = data;
-            console.log(data);
         })
         .error(function(data) {
             console.log('Error: ' + data);
