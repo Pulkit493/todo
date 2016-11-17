@@ -22,7 +22,7 @@ model_loc = __dirname + '/app/models';
 model_files = fs.readdirSync(model_loc);
 model_files.forEach(function (file) {
     return (require(model_loc + '/' + file)).boot(app);
-});
+//});
 
 
 // routes ======================================================================
